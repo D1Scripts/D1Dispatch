@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch</title>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dispatch.css">
+</head>
+<body>
+    <!-- Radio UI -->
+    <div id="radio-container">
+        <div class="header">
+            <h1>Dispatch</h1>
+            <div class="subheader">Radio Module</div>
+            <div class="channel-info">Channel <span id="channel-number">0</span> (<span id="member-count">0</span>)</div>
+        </div>
+        <div id="members-list">
+            <!-- Members will be added here dynamically -->
+        </div>
+    </div>
+
+    <!-- Unit Stats UI (Only visible on channel 22) -->
+    <div id="dispatch-container">
+        <div class="header">
+            <h1>Unit Stats</h1>
+            <div class="subheader">Dispatch Module</div>
+            <div class="channel-info">Channel 22 (1)</div>
+        </div>
+        <div class="info">
+            <div class="location">
+                <div class="label">Current Location:</div>
+                <div id="current-street">Unknown</div>
+                <div id="current-area">Unknown Area</div>
+            </div>
+            <div class="waypoints">
+                <div class="section-header">Waypoint Requests</div>
+                <div id="wp-requests">
+                    <!-- Waypoint requests will be added here dynamically -->
+                </div>
+                <div class="section-header">Active Waypoint</div>
+                <div id="active-waypoint">
+                    None
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+    <script src="dispatch.js" type="text/javascript"></script>
+</body>
+</html> 
